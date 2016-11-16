@@ -1,0 +1,21 @@
+<div class="news-box">
+    <div class="img-box">
+    </div>
+    <div class="news-box-date">
+        <h3>
+            <time datetime="<%= post.published_at %>">
+              <%= I18n.localize(post.published_at.to_date, format: :short) %>
+             </time>
+        </h3>
+    </div>
+    <div class="news-box-content">
+        <h3><%= link_to post.title, blogo_post_path(post), :class => "news-link" %></h3>
+        <div class="h-10"></div>
+        <p><%= raw post_overview(post) %></p>
+        <div class="h-10"></div>
+        <%= link_to "Read more", blogo_post_path(post), :class => "btn btn-brown btn-xs" %>
+    </div>
+</div>
+
+
+

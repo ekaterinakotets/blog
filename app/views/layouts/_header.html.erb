@@ -1,0 +1,42 @@
+<!-- navbar -->
+
+<nav class="navbar navbar-fixed-top inner-page-menu">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <i class="ion-navicon"></i>
+            </button>
+
+            <%= link_to (image_tag "logo-1.png", :style => "width: 150px"), root_path %>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li><%= link_to 'Home', root_path %></li>
+                <li><a class="link-hover" href="#about">About</a></li>
+                <li><a class="link-hover" href="#services">Services</a></li>
+                <li><a class="link-hover" href="#team">Team</a></li>
+                <li><a class="link-hover" href="#styles">Styles</a></li>
+                <li><a class="link-hover" href="#news">news</a></li>
+                <li><%= link_to "Blog", blogo_root_path %></li>
+                <!--<li class="dropdown">-->
+                <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="ion-chevron-down"></span></a>-->
+                <!--    <ul class="dropdown-menu">-->
+                <!--        <li><%= link_to "Blog", blogo_root_path %></li>-->
+                <!--        <li><a href="03-single-blog-barber.html">Blog single</a></li>-->
+
+                <!--    </ul>-->
+                <!--</li>-->
+                <li class="contact-link"><a class="link-hover" href="#contact">contact</a></li>
+            </ul>
+
+            <a href="#contact" class=" pull-right btn btn-brown btn-xs">Contact</a>
+        </div>
+        <!-- /.navbar-collapse -->
+
+
+    </div>
+</nav>
+<!--/ .navbar -->

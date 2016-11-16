@@ -1,0 +1,45 @@
+<div class="col-md-4">
+    <div class="sidebar">
+        <div class="sidebar-div text-center">
+            <div class="bordered about-me">
+                <img src="img/barber/man-1.jpg" alt="" class="img-circle" />
+                <h3>Ahmed Eissa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur iscing elit Contemnit enim disserendi elegantiam confuse loquitur</p>
+                <div class="h-10"></div>
+                <ul class="social-ul">
+                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <% if @recent_posts %>
+        <div class="resent-widget sidebar-div">
+            <div class="bordered">
+                <h3 class="sidebar-title"><%= t('blogo.user.recent_posts') %></h3>
+                <ul>
+                  <% @recent_posts.each do |post| %>
+                    <li class="clearfix">
+                        <a href="#">
+                            <div class="alphabet">M</div>
+                            <h3> <%= link_to post.title, blogo_post_path(post) %></h3>
+                        </a>
+                    </li>
+                  <% end %>
+                </ul>
+            </div>
+        </div>
+        <% end %>
+        <div class="sidebar-div">
+            <div class="bordered sidebar-list-div">
+                <h3 class="sidebar-title"><%= t('blogo.user.tags') %></h3>
+                <ul class="sidebar-list">
+                   <% @tags.each do |tag| %>
+                      <li><%= link_to tag.name, blogo_tag_path(tag), class: 'tag pure-button button-secondary' %></li>
+                   <% end %>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
