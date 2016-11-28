@@ -480,8 +480,8 @@ a.link-hover:after {
 ==================================================*/
 
 .home-bg {
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),url('01.jpg') !important;
-    background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('01.jpg') !important;
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),image-url('01.jpg') !important;
+    background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), image-url('01.jpg') !important;
     background-size: cover !important;
     color: #f5f5f5;
 }
@@ -561,7 +561,7 @@ a.link-hover:after {
 ==================================================*/
 
 .about-bg {
-    background: url('02.jpg');
+    background: image-url('02.jpg');
     background-size: cover;
 }
 
@@ -569,8 +569,8 @@ a.link-hover:after {
 ==================================================*/
 
 .services-bg {
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('03.jpg');
-    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('03.jpg');
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), image-url('03.jpg');
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), image-url('03.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -737,8 +737,8 @@ a.link-hover:after {
 ==================================================*/
 
 .testimonials-section {
-    background: -webkit-linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('04.jpg');
-    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('04.jpg');
+    background: -webkit-linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), image-url('04.jpg');
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), image-url('04.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -854,7 +854,7 @@ a.link-hover:after {
     background-color: rgba(169, 146, 114, 0.9);
     background-repeat: no-repeat;
     background-size: 32px 64px;
-    background-image: url('cd-icon-controller.svg');
+    background-image: image-url('cd-icon-controller.svg');
 }
 .no-touch #cd-zoom-in:hover,
 .no-touch #cd-zoom-out:hover {
@@ -928,7 +928,7 @@ a.link-hover:after {
 #contact-form input[type="search"].error,
 #contact-form input[type="tel"].error,
 #contact-form input[type="time"].error,
-#contact-form input[type="url"].error,
+#contact-form input[type="image-url"].error,
 #contact-form textarea.error {
     border-color: #D33E43
 }
