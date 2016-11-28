@@ -816,7 +816,7 @@ a.link-hover:after {
 }
 .news-box-date h3 {
     margin: 0;
-    text-transform: uppercase;
+    
     font-size: 14px;
     color: #a99272
 }
@@ -1378,4 +1378,18 @@ footer h3 {
 .quotes {
     width: 30px; 
     height: 30px;
+}
+
+.logo-img {
+    opacity: 0.5;
+    width: 111px;
+}
+
+.logo-img:hover {
+    opacity: 1.0;
+}
+
+iframe {
+    height: 603px;
+    width: 600px;
 }

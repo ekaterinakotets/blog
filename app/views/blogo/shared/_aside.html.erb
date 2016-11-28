@@ -2,8 +2,8 @@
     <div class="sidebar">
         <div class="sidebar-div text-center">
             <div class="bordered about-me">
-                <img src="img/barber/man-1.jpg" alt="" class="img-circle" />
-                <h3>Ahmed Eissa</h3>
+                <%= image_tag "1_1.jpg", :alt => "", :class => "img-circle", :style => "width: 150px" %>
+                <h3>Renat Gayanov</h3>
                 <p>Lorem ipsum dolor sit amet consectetur iscing elit Contemnit enim disserendi elegantiam confuse loquitur</p>
                 <div class="h-10"></div>
                 <ul class="social-ul">
@@ -21,10 +21,8 @@
                 <ul>
                   <% @recent_posts.each do |post| %>
                     <li class="clearfix">
-                        <a href="#">
-                            <div class="alphabet">M</div>
+                            <div class="alphabet">R</div>
                             <h3> <%= link_to post.title, blogo_post_path(post) %></h3>
-                        </a>
                     </li>
                   <% end %>
                 </ul>
