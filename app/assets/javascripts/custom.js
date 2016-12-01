@@ -2,7 +2,6 @@
 var sections = $('.section'),
     nav = $('.navbar-fixed-top,footer'),
     nav_height = nav.outerHeight();
-console.log("XXX");
 $(document).on('ready', function () {
     "use strict";
 

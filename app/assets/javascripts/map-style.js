@@ -159,10 +159,10 @@ jQuery(document).ready(function($){
 	//add custom buttons for the zoom-in/zoom-out on the map
 	function CustomZoomControl(controlDiv, map) {
 		//grap the zoom elements from the DOM and insert them in the map 
-	  	var controlUIzoomIn= document.getElementById('cd-zoom-in'),
-	  		controlUIzoomOut= document.getElementById('cd-zoom-out');
-	  	controlDiv.appendChild(controlUIzoomIn);
-	  	controlDiv.appendChild(controlUIzoomOut);
+	  	var controlUIzoomIn = document.getElementById("cd-zoom-in"),
+	  		controlUIzoomOut = document.getElementById("cd-zoom-out");
+	  		controlDiv.appendChild(controlUIzoomIn);
+	  	    controlDiv.appendChild(controlUIzoomOut);
 
 		// Setup the click event listeners and zoom-in or out according to the clicked element
 		google.maps.event.addDomListener(controlUIzoomIn, 'click', function() {
@@ -174,6 +174,8 @@ jQuery(document).ready(function($){
 	}
 
 	var zoomControlDiv = document.createElement('div');
+	zoomControlDiv.innerHTML;
+    document.body.appendChild(zoomControlDiv);
  	var zoomControl = new CustomZoomControl(zoomControlDiv, map);
 
   	//insert the zoom div on the top left of the map
